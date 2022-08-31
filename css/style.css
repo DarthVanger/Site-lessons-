@@ -233,6 +233,17 @@ body {
   background-repeat: no-repeat;
 }
 /* ===============footer================ */
+.footer {
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -30px;
+  left: 0;
+  border-bottom: 1px solid #bcd0e5;
+}
 .footer__block {
   display: flex;
   justify-content: space-between;
@@ -241,13 +252,30 @@ body {
 .footer__logo {
   padding-top: 15px;
 }
-
 .footer__title {
   max-width: 280px;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: var(--main-font-color);
+}
+.footer__list {
+  padding: 0;
+  margin: 0;
+}
+.list__item {
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: var(--main-font-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
 .footer__text {
   font-weight: 500;
